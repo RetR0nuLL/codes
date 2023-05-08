@@ -1,7 +1,7 @@
 def finder(substring):
-    global index
-    global list_index
-    global tedad
+    list_index = 0
+    index = 0
+    tedad = 0
     for i in input_str :
         if index == andazeh:
             tedad += 1
@@ -13,13 +13,10 @@ def finder(substring):
         else:
             index = 0
             list_index = 0
+    return tedad
 input_str = input("lotfan yek jomleh benevisid!\n")
 substr = input("substr mored nazar ra vared konid!\n")
 input_str += " "
 andazeh = len(substr)
-list_index = 0
-index = 0
-tedad = 0
-finder(substr)
-print(f"there are {tedad} {substr} in the string!!!!!")
+print(f"there are {finder(substr)} {substr} in the string!!!!!")
 
