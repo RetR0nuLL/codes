@@ -55,8 +55,7 @@ new_stri = (
     .replace("Z", "52 ")
 )
 new_stri = new_stri.split()
-new_sum = 0
-print(new_stri)
+new_sum = 0
 for i in new_stri:
     new_sum = new_sum + int(i)
 len_new = len(str(new_sum))
