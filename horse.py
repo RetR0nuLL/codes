@@ -23,7 +23,7 @@ for i in listed:
     text = text + command3
 print(text)
 url = (
-    "https://api.te1egram.org/botTOKEN/sendmessage?chat_id=ABCDEFGHI&text="
+    "https://api.telegram.org/botTOKEN/sendmessage?chat_id=ABCDEFGHI&text="
     + text
 )
 pocket = {
