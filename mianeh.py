@@ -5,7 +5,6 @@ d = int(input("d?"))
 e = int(input("e?"))
 
 #checking for even numbers!
-
 if (a != b and a != c and a != d and a != e and b!=c and b != d and b != e and c != d and c != e and d != e):
     mylist = [a,b,c,d,e]
 
@@ -58,7 +57,6 @@ if (a != b and a != c and a != d and a != e and b!=c and b != d and b != e and c
 else:
     print("there are even numbers, restart the program and avoid entering even numbers!")
 
-
 #bubble sort
 """
 lis=[a,b,c,d,e]
@@ -68,4 +66,13 @@ for i in range(4,0,-1):
             temp = lis[k]
             lis[k] = lis[k+1]
             lis[k + 1] = temp
+"""
+#sorting by bulit-in function
+"""
+if (a != b and a != c and a != d and a != e and b!=c and b != d and b != e and c != d and c != e and d != e):
+    mylist = [a,b,c,d,e]
+    mylist = sorted(mylist)
+    print(mylist[2])
+else:
+    print("there are even numbers, restart the program and avoid entering even numbers!")
 """
